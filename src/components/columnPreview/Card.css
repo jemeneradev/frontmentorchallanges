@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;700&family=Lexend+Deca&display=swap');
+
+/* * {
+  outline: 1px solid black;
+} */
+.card {
+  font-size: 16px;
+  width: 263px;
+  height: 465px;
+  padding: 52px 56px;
+  line-height: 48px;
+  border-radius: 8px 8px 0 0;
+  --main-color: hsl(0,0%,95%);
+  /* --main-color: black; */
+  color: var(--main-color,hsl(0, 0%, 95%));
+  /* opacity: .5; */
+  padding-bottom: 0;
+}
+
+.card--last {
+  height: 455px;
+  border-radius: 8px;
+}
+.card__logo {
+  width: fit-content;
+  height: 52px;
+  border: 0;
+}
+
+.card__desc {
+  color: var(--main-color);
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.05em;
+  line-height: 1.72em;
+  word-spacing: 0.03em;
+  letter-spacing: 0.005em;
+  width: 100%;
+  margin-top: 16px;
+  padding-top: 0.45em;
+}
+
+.card__title {
+  --main-color: hsl(0,0,100%);
+  color: var(--main-color);
+  font-family: "Big Shoulders Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.85em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 41px;
+  margin-bottom: 25px;
+  position: relative;
+  left: 1.2px;
+  top: 0.4px;
+  width: fit-content;
+}
+
+.learn {
+  position: relative;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  text-decoration: none;
+  width: 167px;
+  height: 55px;
+  background-color: var(--main-color);
+  border-radius: 27px;
+  border-width: 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.learn:hover {
+  background-color: transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px var(--main-color); 
+  box-shadow: 0px 0px 0px 2px hsl(0, 0%, 95%);
+}
+
+.learn_a {
+  width: 100%;
+  text-align: center;
+  font-size: 1.14em;
+}
+
+.learn:hover > .learn_a {
+  color: var(--main-color) !important;
+}
+
+@media (min-width:768px) {
+  .card {
+    width: 185px;
+    height: 355px;
+    border-radius: 8px 0px 0px 8px;
+    padding: 31px 40px;
+  }
+
+  .card--last {
+    border-radius: 8px;
+    width: 177px;
+  }
+
+  .card__logo img {
+    width: 3.35em;
+  }
+  .card__title {
+    margin-top: 0.45em;
+    margin-bottom: 0;
+    font-size: 2.07em;
+    left: 0.9px;
+  }
+  .card__desc {
+    font-size: 0.76em;
+    margin-top: 11px;
+    padding-top: 0.61em;
+    width: 95%;
+  }
+  .learn {
+    width: 122px;
+    height: 40px;
+    margin-top: 56px;
+  }
+  .learn_a {
+    font-size: 0.83em;
+    position: relative;
+    bottom: 1px;
+  }
+}

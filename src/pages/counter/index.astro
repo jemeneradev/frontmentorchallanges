@@ -1,5 +1,9 @@
 ---
-// Component Import
+// Component Imports
+import Counter from '../../components/counter/Counter.jsx'
+const someProps = {
+  count: 0,
+}
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -22,10 +26,9 @@
   </head>
   <body>
     <main>
-      <ul>
-        <li><a href="/counter">Counter</a></li>
-        <li><a href="/columnpreview">3-column preview card</a></li>
-      </ul>
+      <Counter {...someProps} client:visible>
+        <h1>Hello, React!</h1>
+      </Counter>
     </main>
   </body>
 </html>
