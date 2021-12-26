@@ -100,40 +100,62 @@
 
 @media (min-width:768px) {
   .card {
-    width: 185px;
-    height: 355px;
+    width: 225px;
+    height: 460px;
     border-radius: 8px 0px 0px 8px;
-    padding: 31px 40px;
+    padding-left: 49px;
+    padding-top: 40px;
   }
 
   .card--last {
     border-radius: 8px;
-    width: 177px;
+    width: 209px;
+    position: relative;
+    left: 16px;
   }
 
+  .card--last .card__desc {
+    width: 100%;
+  }
+
+  .card__logo {
+    position: relative;
+    right: 1px;
+  }
   .card__logo img {
-    width: 3.35em;
+    width: 4.05em;
   }
   .card__title {
-    margin-top: 0.45em;
+    margin-top: 0.75em;
     margin-bottom: 0;
-    font-size: 2.07em;
-    left: 0.9px;
+    font-size: 2.47em;
+    left: 0.7px;
+    top: 1px;
   }
   .card__desc {
-    font-size: 0.76em;
-    margin-top: 11px;
+    font-size: 0.9em;
+    margin-top: 1.3em;
     padding-top: 0.61em;
-    width: 95%;
+    width: 94%;
+    letter-spacing: 0.02em;
+    word-spacing: 0em;
+    line-height: 1.73em;
+    position: relative;
+    top: 0px;
+    left: -0.7px;
   }
   .learn {
-    width: 122px;
-    height: 40px;
-    margin-top: 56px;
+    width: 145.1px;
+    height: 48px;
+    margin-top: 68px;
+    position: relative;
+    left: -0.1px;
   }
   .learn_a {
-    font-size: 0.83em;
+    font-size: 0.94em;
     position: relative;
-    bottom: 1px;
+    left: 0px;
+    top: 0px;
+    letter-spacing: 0.04em;
   }
 }
