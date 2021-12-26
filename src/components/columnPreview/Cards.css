@@ -1,37 +1,25 @@
 .cards {
     margin: 0;
     padding: 0;
-    margin-top: 43px;
+    margin-top: 88px;
     list-style: none;
+    opacity: .5;
 }
+
 .cards__item:first-child {
-    top: 0px; 
-}
-.cards__item:last-child {
-    top: -20px; 
+    top: 0;
 }
 .cards__item {
     position: relative;
-    top: -10px;
+    top: -8px;
+}
+.cards__item:last-child {
+    top: -16px;
 }
 
 @media (min-width:768px) {
     .cards {
         display: inline-flex;
         margin-top: 172px;
-    }
-
-    .cards__item:first-child {
-        top: 0px; 
-        left: 0;
-    }
-    .cards__item:last-child {
-        top: 0;
-        left: -19px;
-    }
-    .cards__item {
-        position: relative;
-        top: 0;
-        left: -9px;
     }
 }

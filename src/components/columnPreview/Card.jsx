@@ -1,8 +1,7 @@
 import './Card.css'
 
 export default function Card(props) {
-    console.log(props)
-    const imgsrc = `images/columnpreview/${props.type}.svg`
+    const imgsrc = `public/images/columnpreview/${props.type}.svg`
     const imgalt = `${props.type} car`
     const bcolor = `${props.bcolor}`
     const cardClass = `card ${props.lastChild ? "card--last":""}`
