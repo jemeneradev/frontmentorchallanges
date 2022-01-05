@@ -10,11 +10,11 @@ function Indicator(props) {
     return (
         <section className="indicator">
             <header>
-                <img src="images/fylodatastorage/logo.svg"/>
+                <img src="/images/fylodatastorage/logo.svg"/>
                 <ul>
-                    <li><img src="images/fylodatastorage/file.svg" /></li>                
-                    <li><img src="images/fylodatastorage/folder.svg" /></li>
-                    <li><img src="images/fylodatastorage/upload.svg" /></li>
+                    <li><img src="/images/fylodatastorage/file.svg" /></li>                
+                    <li><img src="/images/fylodatastorage/folder.svg" /></li>
+                    <li><img src="/images/fylodatastorage/upload.svg" /></li>
                 </ul>
             </header>
             <main>

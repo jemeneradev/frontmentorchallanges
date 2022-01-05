@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600&family=Open+Sans&family=Raleway:wght@100;400;700&display=swap');
 
 body {
-    background: no-repeat url("images/fylodatastorage/bg-mobile.png");
+    background: no-repeat url("/images/fylodatastorage/bg-mobile.png");
     background-size: cover;
     background-position-y: 1vh;
 }
 @media screen and (min-width:1440px) {
     body{
-        background: no-repeat url("images/fylodatastorage/bg-desktop.png");
+        background: no-repeat url("/images/fylodatastorage/bg-desktop.png");
         background-position-y: 54vh;
     } 
 }
