@@ -28,7 +28,7 @@ body {
 
     /* --current-storage: 815;
     --total-storage: 1000; */
-    opacity: .5;
+    /* opacity: .5; */
 }
 .indicator header {
     width: 100%;
