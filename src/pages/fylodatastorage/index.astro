@@ -1,0 +1,41 @@
+---
+// Component Imports
+import Indicator from '../../components/fylodatastorage/Indicator.jsx'
+import Design from '../../components/design/Design.jsx'
+
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <style>
+      html,
+      body {
+        font-family: system-ui;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* background-color: #F2F2F2; */
+        height: 100%;
+        width: 100%;
+        background-color: hsl(229, 57%, 11%);
+    }
+    body main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+    </style>
+  </head>
+  <body>
+    <main>
+      <Indicator currentStorage={815} totalStorage={1000} client:load/>
+      <Design name={"fylodatastorage"} display={{mobile:true}}/>
+    </main>
+  </body>
+</html>

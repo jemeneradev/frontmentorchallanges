@@ -6,14 +6,14 @@ export default function Design({name, display}) {
         {name:"table", val: 768},
         {name:"desktop", val: 920}
     ]
-    srcSets = (sizes.map(size => display[size.name] ? `/images/${name}/design-${size.name}.svg ${size.val}w`:"")).filter(val => val).join(",\n")
+    const srcSets = (sizes.map(size => display[size.name] ? `public/images/${name}/design-${size.name}.svg ${size.val}w`:"")).filter(val => val).join(",\n")
 
     return (
         <div className={"svgImage"}>
          <img
-            srcset={srcSets}
+            srcSet={srcSets}
             sizes="(min-width: 1440px) 1440px, (min-width: 768px) 768px, 375px"
-            src={`/images/${name}/design-mobile.svg`}
+            src={`public/images/${name}/design-mobile.svg`}
             alt={"design"}
             />
         </div>
