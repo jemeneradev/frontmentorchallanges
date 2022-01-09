@@ -45,7 +45,7 @@ body{
     height: 90px;
     top: -142px;
     left: 38.46%;
-    background-image: url('/public/images/calculator/logo.svg');
+    background-image: url('/images/calculator/logo.svg');
     background-repeat: no-repeat;
     background-size: 112px 110px;
 }
@@ -111,7 +111,7 @@ fieldset {
 }
 
 #lbl_amount::before{
-    background-image: url("public/images/calculator/icon-dollar.svg");
+    background-image: url("/images/calculator/icon-dollar.svg");
 }
 
 /*fld_percentage*/
@@ -194,7 +194,7 @@ span.zero_group_error {
 }
 
 #lbl_group_size::before{
-    background-image: url("public/images/calculator/icon-person.svg");
+    background-image: url("/images/calculator/icon-person.svg");
     background-size: 16px;
     top:60px;
     left: 22px;
