@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+
+#tip_calculator {
+    --strong-cyan-color: hsl(172, 67%, 45%);    
+    --dark-cyan-color: hsl(183, 100%, 15%);
+    --grayish-cyan-color: hsl(186, 14%, 43%);
+    --light-grayish-cyan-color: hsl(184, 14%, 56%);
+    --mid-grayish-cyan-color: hsl(185, 41%, 84%);
+    --lightest-grayish-cyan-color: hsl(189, 41%, 97%);
+    --white-color: hsl(0, 0%, 100%);
+    box-shadow: 1px 1px 394px -48px var(--grayish-cyan-color);
+    -webkit-box-shadow: 1px 1px 394px -48px var(--grayish-cyan-color);
+    -moz-box-shadow: 1px 1px 394px -48px var(--grayish-cyan-color);
+}
+
+#tip_calculator {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 493px;
+    font-family: "Space Mono";
+    font-size: 16px;
+    background-color: var(--white-color);
+    color: hsl(186, 14%, 43%);
+    margin: 0;
+    margin-top: 187px;
+    padding: 0;
+    padding-top: 41px;
+    padding-bottom: 41px;
+    border-radius: 31px 31px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* opacity: .5; */
+}
+
+#tip_calculator::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 90px;
+    top: -142px;
+    left: 38.46%;
+    background-image: url('/public/images/calculator/logo.svg');
+    background-repeat: no-repeat;
+    background-size: 112px 110px;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.fld_label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 7px;
+    position: relative;
+    font-size: 1.3em;
+    left: 1px;
+    top: 0;
+}
+.fld_label::before {
+    content: "";
+    background-size: 14px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 59px;
+    left: 24px;
+    width: 40px;
+    height: 40px;
+}
+
+.fld_input {
+    height: 62px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    font-size: 1.9em;
+    font-weight: 700;
+    font-family: 'Space Mono';
+    text-align: end;
+    border-radius: 6px;
+    padding-top: .3%;
+    padding-right:1.9%;
+    letter-spacing: 0.01em;
+    background-color: var(--lightest-grayish-cyan-color);
+    color: var(--dark-cyan-color);
+}
+
+.fld_input:hover, .fld_input:focus {
+    outline: 2px solid var(--strong-cyan-color);
+}
+
+#payment_info {
+    box-sizing: content-box;
+    margin-top: 0px;
+    width: 83.3%;
+    height: 605px;
+}
+
+/*fld_amount*/
+.fld_amount {
+    margin-bottom: 2.65em;
+}
+
+#lbl_amount::before{
+    background-image: url("public/images/calculator/icon-dollar.svg");
+}
+
+/*fld_percentage*/
+
+.fld_percentage {
+    height: 230px;
+    margin-bottom: 91px;
+}
+
+.fld_percentage ul {
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: 20.5px;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 21px;
+    height: 228px;
+    width: 99.6%;
+    position: relative;
+}
+
+.percentage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--dark-cyan-color);
+    color: var(--white-color);
+}
+
+.percentage input {
+    appearance: none;
+}
+
+.percentage:hover {
+    background-color: var(--mid-grayish-cyan-color);
+    color: var(--dark-cyan-color);
+}
+
+.pointer:hover {
+    cursor: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 450 50' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Cpath d='M17,4C17.461,4 18,4.176 18.375,4.5C18.75,4.824 19,5.266 19,6L19,22L21,22L21,20C21,19.125 21.66,18 23,18C24.34,18 25,19.125 25,20L25,21C25.008,21.547 25.453,21.984 26,21.984C26.547,21.984 26.992,21.547 27,21C27,20.465 27.133,19.934 27.406,19.594C27.68,19.254 28.082,19 29,19C29.633,19 29.996,19.258 30.375,19.938C30.754,20.617 31,21.719 31,23L33,23C33,22.418 33.105,21.91 33.344,21.594C33.582,21.277 33.965,21 35,21C35.902,21 36.246,21.34 36.563,21.938C36.879,22.535 37,23.418 37,24L37,40C37,43.855 33.855,47 30,47L20.906,47C18.285,47 15.816,45.5 14.688,43.156L11.906,37.594C11.902,37.586 11.91,37.57 11.906,37.563C11.613,36.875 11,35.32 11,33.906C11,31.727 11.832,30.586 12.656,29.875C13.48,29.164 14.25,28.969 14.25,28.969C14.691,28.855 15,28.457 15,28L15,5.906C15,5.238 15.25,4.82 15.625,4.5C16,4.18 16.539,4 17,4Z' style='fill:rgb(250,250,250);fill-rule:nonzero;stroke:black;stroke-width:1px;'/%3E%3Cg transform='matrix(1,0,0,1,0,-1)'%3E%3Cpath d='M17,3C16.063,3 15.117,3.313 14.344,3.969C13.57,4.625 13,5.676 13,6.906L13,28.438C12.559,28.598 12.156,28.645 11.344,29.344C10.168,30.359 9,32.184 9,34.906C9,36.879 9.785,38.684 10.094,39.406L10.094,39.438L12.906,45.031C12.91,45.039 12.902,45.055 12.906,45.063C14.383,48.105 17.539,50 20.906,50L30,50C34.945,50 39,45.945 39,41L39,25C39,24.18 38.871,23.051 38.313,22C37.754,20.949 36.598,20 35,20C33.906,20 33.094,20.375 32.438,20.875C32.328,20.574 32.273,20.238 32.125,19.969C31.504,18.848 30.367,18 29,18C27.883,18 27.008,18.406 26.344,18.969C25.68,17.871 24.559,17 23,17C22.219,17 21.574,17.246 21,17.594L21,7C21,5.734 20.461,4.676 19.688,4C18.914,3.324 17.938,3 17,3ZM17,5C17.461,5 18,5.176 18.375,5.5C18.75,5.824 19,6.266 19,7L19,23L21,23L21,21C21,20.125 21.66,19 23,19C24.34,19 25,20.125 25,21L25,22C25.008,22.547 25.453,22.984 26,22.984C26.547,22.984 26.992,22.547 27,22C27,21.465 27.133,20.934 27.406,20.594C27.68,20.254 28.082,20 29,20C29.633,20 29.996,20.258 30.375,20.938C30.754,21.617 31,22.719 31,24L33,24C33,23.418 33.105,22.91 33.344,22.594C33.582,22.277 33.965,22 35,22C35.902,22 36.246,22.34 36.563,22.938C36.879,23.535 37,24.418 37,25L37,41C37,44.855 33.855,48 30,48L20.906,48C18.285,48 15.816,46.5 14.688,44.156L11.906,38.594C11.902,38.586 11.91,38.57 11.906,38.563C11.613,37.875 11,36.32 11,34.906C11,32.727 11.832,31.586 12.656,30.875C13.48,30.164 14.25,29.969 14.25,29.969C14.691,29.855 15,29.457 15,29L15,6.906C15,6.238 15.25,5.82 15.625,5.5C16,5.18 16.539,5 17,5ZM21.906,29.969C21.863,29.977 21.82,29.988 21.781,30C21.316,30.105 20.988,30.523 21,31L21,40C20.996,40.359 21.184,40.695 21.496,40.879C21.809,41.059 22.191,41.059 22.504,40.879C22.816,40.695 23.004,40.359 23,40L23,31C23.012,30.711 22.895,30.434 22.688,30.238C22.477,30.039 22.191,29.941 21.906,29.969ZM26.906,29.969C26.863,29.977 26.82,29.988 26.781,30C26.316,30.105 25.988,30.523 26,31L26,40C25.996,40.359 26.184,40.695 26.496,40.879C26.809,41.059 27.191,41.059 27.504,40.879C27.816,40.695 28.004,40.359 28,40L28,31C28.012,30.711 27.895,30.434 27.688,30.238C27.477,30.039 27.191,29.941 26.906,29.969ZM31.906,29.969C31.863,29.977 31.82,29.988 31.781,30C31.316,30.105 30.988,30.523 31,31L31,40C30.996,40.359 31.184,40.695 31.496,40.879C31.809,41.059 32.191,41.059 32.504,40.879C32.816,40.695 33.004,40.359 33,40L33,31C33.012,30.711 32.895,30.434 32.688,30.238C32.477,30.039 32.191,29.941 31.906,29.969Z' style='fill-rule:nonzero;stroke:black;stroke-width:1px;'/%3E%3C/g%3E%3C/svg%3E%0A") 2 2 ,pointer;
+}
+
+.percentage.tip_selected {
+    background-color: var(--strong-cyan-color);
+    color: var(--dark-cyan-color);
+}
+
+.percentage label {
+    font-size: 1.9em;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 1px;
+    left: 1px;
+}
+.percentage label span {
+    position: relative;
+    top: 14%;
+    right: 3.5%;
+}
+
+.fld_group_size {
+    height: 100px;
+}
+
+span.zero_group_error {
+    color: coral;
+    float:right;
+}
+#group_size.zero_group_error {
+    outline: 2px solid coral !important;
+}
+
+#lbl_group_size::before{
+    background-image: url("public/images/calculator/icon-person.svg");
+    background-size: 16px;
+    top:60px;
+    left: 22px;
+}
+
+#custom_percentage input::placeholder{
+    padding-right: 3px;
+}
+
+ #results {
+    width: 87%;
+    height: 332px;
+    box-sizing: border-box;
+    background-color: var(--dark-cyan-color);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10.5% 2.6%;
+    padding-bottom: 6.5%;
+    font-size: 16px;
+ }
+
+ #results p {
+    font-size: 1.3em;    
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 91%;
+    margin-bottom: 26px;
+    color: var(--white-color);
+ }
+ .lbl_results small {
+    position: relative;
+    top: -5px;
+    left: 0.4px;
+    font-size: 0.8em;
+    color: var(--grayish-cyan-color);
+ }
+
+ .display_results {
+     font-size: 2em;
+     color: var(--strong-cyan-color);
+     position: relative;
+     left: 2px;
+     bottom: 3px;
+     letter-spacing: -0.019em;
+ }
+
+ #compute {
+    width: 91.5%;
+    height: 62px;
+    margin-top: 11px;
+    position: relative;
+    top: 1px;
+    border-radius: 6px;
+    border: 0;
+    font-size: 1.64em;
+    font-weight: 700;
+    font-family: 'Space Mono';
+    background-color: var(--strong-cyan-color);
+    padding-right: 2px;
+    padding-top: 3px;
+    color: var(--dark-cyan-color);
+ }
+
+ #compute:hover{
+    background-color: var(--mid-grayish-cyan-color);
+ }
