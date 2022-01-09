@@ -12,9 +12,9 @@ body{
     --mid-grayish-cyan-color: hsl(185, 41%, 84%);
     --lightest-grayish-cyan-color: hsl(189, 41%, 97%);
     --white-color: hsl(0, 0%, 100%);
-    box-shadow: 1px 1px 394px -48px var(--grayish-cyan-color);
-    -webkit-box-shadow: 1px 1px 394px -48px var(--grayish-cyan-color);
-    -moz-box-shadow: 1px 1px 394px -48px var(--grayish-cyan-color);
+    box-shadow: 1px 1px 394px -65px var(--grayish-cyan-color);
+    -webkit-box-shadow: 1px 1px 394px -65px var(--grayish-cyan-color);
+    -moz-box-shadow: 1px 1px 394px -65px var(--grayish-cyan-color);
 }
 
 #tip_calculator {
